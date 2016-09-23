@@ -70,7 +70,6 @@ class GuzzleRequestAdapter extends Request
         }
         catch (GuzzleException $e) {
             throw new SpotifyWebAPIException('Guzzle transport error: ' . $e->getMessage());
-
         }
 
         $headers = $response->getHeaders();
